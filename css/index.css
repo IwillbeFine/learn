@@ -1,0 +1,211 @@
+*{margin: 0;padding: 0;list-style: none;}
+/* 版心设置 */
+.content-wrap{
+    width: 1358px;
+    /* box-shadow:  0 0 0 1px red; */
+}
+/* 网页头部样式 */
+#header{
+    width: 100%;
+    height: 360px;
+    background: url('../images/0.jpg') no-repeat center/cover;
+}
+/* 头部的顶部黑色背景样式 */
+#header .dark-bg{
+    width: 100%;
+    height: 131px;
+    background: url(../images/dark-jianbian-repeatx-0.png);
+}
+/* 头部的内容区域样式 */
+#header .dark-bg .content-wrap{
+    width: 100%;
+    height: 78px;
+    margin: auto;
+    z-index: 10;
+}
+/* 内容区域的左侧图片 */
+#header .dark-bg .content-wrap>a>img{
+    margin-left: 262px;
+    position: relative;
+    float: left;
+    z-index: 10;
+    width: 167px;
+    height: 60px;
+    margin-top: 10px;
+}
+/* 头部内容区域子元素ul样式 */
+#header .dark-bg .content-wrap>ul.nav-list{
+    position: relative;
+    float: left;
+    z-index: 10;
+    margin: 20px 0 0 0;
+    /* box-shadow:  0 0 0 1px red; */
+}
+/* 头部内容区域子元素ul:hover菜单样式 */
+#header .dark-bg .content-wrap>ul.nav-list:hover+div.menu{
+    height: 360px;
+}
+/* 1.下拉菜单区域样式 */
+#header .dark-bg .content-wrap div.menu{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    left: 0;
+    background: url('../images/dark60-bg-repeat.png');
+}
+/* 1.1当鼠标移到menu区域的时候也出现拉下菜单 */
+#header .dark-bg .content-wrap div.menu:hover{ 
+    height: 360px;
+}
+/* 2.下拉菜单区域中的ul样式 */
+#header .dark-bg .content-wrap div.menu ul.menu-list{
+    width: 750px;
+    height: 360px;
+    /* box-shadow: 0 0 0 1px blue; */
+    position: relative;
+    left: 428px;
+    top: 70px;
+}
+/* 3.下拉菜单区域中的ul中的li的样式 */
+#header .dark-bg .content-wrap .menu ul.menu-list li{
+    margin-top: 25px;
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+/* 4.下拉菜单区域中的ul中的li的样式 */
+#header .dark-bg .content-wrap div.menu ul.menu-list li>a{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+/* 5.下拉菜单区域中的ul>li>a:hover样式 */
+#header .dark-bg .content-wrap div.menu ul.menu-list li>a:hover{
+    color: wheat;
+}
+/* 6.下拉菜单区域中的ul>li>a>i黄色图标样式 */
+#header .dark-bg .content-wrap div.menu ul.menu-list li>a>i{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background: url('../images/topfoot-spr.png') no-repeat -380px -65px;
+    vertical-align: -2px;
+}
+/* 7.下拉菜单区域中的ul>li>a>i红色图标样式 */
+#header .dark-bg .content-wrap div.menu ul.menu-list li>a>i.icon{
+    background-position: -345px -83px;
+    vertical-align: -2px;
+}
+
+/* 以上的1-7是内容区域ul hover之后的效果样式 */
+
+/* 内容区域子元素ul>li文字列表样式 */
+#header .dark-bg .content-wrap ul.nav-list>li{
+    width: 150px;
+    float: left;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+/* 内容区域子元素ul>li>span文字样式 */
+#header .dark-bg .content-wrap ul.nav-list>li>span{
+    color: #AEAEAE;
+    font-size: 12px;
+}
+/* 头部右侧区域样式 */
+#header .dark-bg .content-wrap .nav-right{
+    position: relative;
+    z-index: 10;
+    float: right;
+    color: #FFFFFF;
+    width: 360px;
+    margin: 16px 0 0 0;
+}
+/* 头部右侧区域内的搜索图标和电话图标通用样式 */
+#header .dark-bg .content-wrap .nav-right>i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 16px;
+    margin-top: 14px;
+}
+/* 头部右侧区域内的搜索图标样式 */
+#header .dark-bg .content-wrap .nav-right i.search{
+    background: url('/images/topfoot-spr.png') no-repeat -380px -37px;
+}
+/* 头部右侧区域内的电话图标样式 */
+#header .dark-bg .content-wrap .nav-right i.phone{
+    background: url('/images/topfoot-spr.png') no-repeat -299px -84px;
+}
+/* 个人中心与登录区域样式 */
+#header .dark-bg .content-wrap .nav-right p{
+    float: right;
+    width: 273px;;
+    vertical-align: middle;
+    text-align: center;
+}
+/* 个人中心a标签样式 */
+#header .dark-bg .content-wrap .nav-right p a{
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+/* 个人中心图标样式 */
+#header .dark-bg .content-wrap .nav-right p a>i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('/images/topfoot-spr.png') no-repeat -215px -116px,url('/images/default.png') no-repeat 5px 5px/40px 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/* 个人中心与登录区域中的文字样式 */
+#header .dark-bg .content-wrap .nav-right p>span{
+    color: #f8dba0;
+}
+/* 查看详情背景样式 */
+#header >a.view{
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin: auto;
+    margin-top: 155px;
+    outline: 1px solid rgb(184, 171, 148);
+    background: url('../images/topfoot-spr.png') no-repeat -216px -38px;
+}
+#header >div.versions{
+    float: right;
+    margin-right:350px;
+    margin-top: -20px;
+}
+#header >div.versions p{
+    color: rgb(168, 160, 160);
+    font-size: 14px;
+}
+#header >div.versions p span{
+    color: #C7AC73;
+}
+#header >div.versions a{
+    float: right;
+    display: inline-block;
+    width: 82px;
+    height: 25px;
+    box-shadow: 0 0 0 2px #C7AC73;
+    background-color: rgba(0, 0, 0, 0.438);
+    margin-top:-22px ;
+    margin-right: -100px ;
+    font-weight: 800;
+    text-align: center;
+    line-height: 25px;
+    color:#C7AC73;
+    text-decoration: none;
+    font-size: 13px;
+}
+#header >div.versions a:hover{
+    background: url('../images/dark-jianbian-repeatx-0.png');
+}
